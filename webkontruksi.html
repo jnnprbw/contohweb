@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKInfrastruktur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+   <!-- HEADER -->
+<header class="bg-gradient-to-r from-slate-800 to-slate-600 text-white py-4 shadow-md sticky top-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="text-3xl font-bold tracking-wide">HKInfrastruktur</div>
+        <nav class="hidden md:block">
+            <ul class="flex space-x-8 text-lg font-medium">
+                <li><a href="#home" class="hover:text-orange-300 transition duration-200">Beranda</a></li>
+                <li><a href="#about" class="hover:text-orange-300 transition duration-200">Tentang Kami</a></li>
+                <li><a href="#services" class="hover:text-orange-300 transition duration-200">Layanan</a></li>
+                <li><a href="#contact" class="hover:text-orange-300 transition duration-200">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="md:hidden flex items-center">
+            <button id="burger-icon" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden bg-slate-700 text-white py-4 hidden">
+        <ul class="flex flex-col space-y-4 text-lg px-4">
+            <li><a href="#home" class="hover:text-orange-400">Beranda</a></li>
+            <li><a href="#about" class="hover:text-orange-400">Tentang Kami</a></li>
+            <li><a href="#services" class="hover:text-orange-400">Layanan</a></li>
+            <li><a href="#contact" class="hover:text-orange-400">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+<section id="home" class="bg-cover bg-center h-screen relative" style="background-image: url('kontruksi.webp');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="max-w-7xl mx-auto px-4 py-32 text-center text-white relative z-10">
+        <h1 class="text-5xl font-bold mb-4">Menuju</h1>
+        <p class="text-lg mb-8">Indonesia’s Leading Integrated Construction Company
+        </p>
+        <a href="#services" class="bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 rounded-full text-xl">Lihat Layanan Kami</a>
+    </div>
+</section>
+
+    <!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-gradient-to-r from-slate-700 to-orange-600 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Image Section -->
+            <div class="relative group overflow-hidden rounded-lg">
+                <img src="alatberat.webp" alt="Tentang Kami - Peternakan Sejahtera" class="rounded-lg shadow-lg w-full h-auto transform transition duration-500 group-hover:scale-105">
+            </div>
+            
+            <!-- Text Section -->
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-semibold mb-6">Tentang Kami</h2>
+                <p class="text-lg leading-relaxed">
+                    <span class="font-bold">Lorem Ipsum</span> telah berkomitmen sejak tahun <span class="font-bold">1995</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p class="text-lg mt-4 leading-relaxed">
+                    Kami menyediakan berbagai produk seperti <span class="font-semibold text-orange-500">Lorem Ipsum</span>, Lorem Ipsum
+                </p>
+                <div class="mt-6">
+                    <a href="#services" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg text-lg hover:bg-orange-600 transition duration-300 ease-in-out">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- SERVICES SECTION -->
+<section id="services" class="py-20 bg-gradient-to-r from-orange-500 to-slate-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-semibold mb-8">Layanan Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="gambar1.webp" alt="Daging Segar" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Daging Segar</h3>
+                <p class="text-gray-600 mt-2">Lorem Ipsum</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="gambar2.webp" alt="Susu Segar" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Susu Segar</h3>
+                <p class="text-gray-600 mt-2">Lorem Ipsum.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <img src="gambar3.webp" alt="Telur Organik" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Telur Organik</h3>
+                <p class="text-gray-600 mt-2">Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-semibold mb-8">Kontak Kami</h2>
+            <p class="text-lg mb-4">Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan atau ingin memesan produk, silakan hubungi kami.</p>
+            <form action="#" method="POST" class="space-y-6 max-w-xl mx-auto">
+                <input type="text" name="name" placeholder="Nama Anda" class="w-full p-4 rounded-lg border border-gray-300" required>
+                <input type="email" name="email" placeholder="Email Anda" class="w-full p-4 rounded-lg border border-gray-300" required>
+                <textarea name="message" rows="4" placeholder="Pesan Anda" class="w-full p-4 rounded-lg border border-gray-300" required></textarea>
+                <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 rounded-lg text-xl">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-lg">© 2025 HKInfrastruktur | Semua hak cipta dilindungi.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-orange-400">Facebook</a>
+                <a href="#" class="hover:text-orange-400">Instagram</a>
+                <a href="#" class="hover:text-orange-400">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burgerIcon = document.getElementById("burger-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        burgerIcon.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
